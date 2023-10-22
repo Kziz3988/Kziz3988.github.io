@@ -10,6 +10,7 @@
             *{padding:0;margin:0;border:0;}
             body{
                 background-color:black;
+                overflow-x:hidden;
             }
             h1{
                 color:#009999;
@@ -24,16 +25,28 @@
             }
             .infobox{
                 position:absolute;
-                left:62.5%;
-                transform:translate(-50%,0);
-                width:50%;
-                height:400%;
+                left:50%;
+                transform:translate(-25%,0);
+                height:100%;
+                width:100%;
+            }
+            .regime{
+                float:top;
+                width:100%;
+                height:50%;
+                margin-bottom:50px;
+            }
+            .text{
+                float:left;
+                color:#009999;
+                font-size:100%;
+                width:25%;
             }
             .info{
-                float:top;
+                float:left;
                 background-color:black;
-                width:50%;
-                height:50%;
+                width:25%;
+                height:100%;
                 border:5px;
                 border-color:#009999;
                 border-style:solid;
@@ -101,11 +114,41 @@
 		</nav>
         <h1 style="font-size:10%"><i>"EVEN IN <script>document.write(new Date().getFullYear())</script> MANKIND STILL POSSESSES THE POWER, TO BOMB ITSELF BACK TO THE STONE AGE"</i></h1>
         <h1>Regimes</h1>
-        <p>There are 9 different regimes in the game, each one corresponds to one of the 9 nuclear owners in reality. Differing from <i style="color:red">First Strike: Classic</i>, players do not need to unlock them by playing other countries or pay for them. Each regime has its own color, science level and initial regions. Apart from those, there is no difference between them.</p>
+        <p>There are 9 different regimes in the game, each one corresponds to one of the 9 nuclear owners in reality. <b>However, the concept design of the game do not represent any political stance on the real world, only indicates that the developer believes that such an fictional world would be interesting.</b> Differing from <i style="color:red">First Strike: Classic</i>, players do not need to unlock them by playing other countries or pay for them. Each regime has its own color, science level and initial regions. Apart from those, there is no difference between them.</p>
         <p>Each regime has diverse real-time scores of threat to others, which is based on the number of controlled regions, the number of launching missiles and science level (these are the same for every regime). In addition, the numbers of missile launched between every pair of regimes also participate in calculation. This makes players who choose powerful regimes like USA or EU are likely to suffer fierce attacks from other regimes in early game. But if they manage to survive and defeat several enemies, victory is within reach. On the other hand, if a player decides to use small regimes like PAKISTAN or KOREA-JAPAN, he or she could easily expand in early game, but has to face some giant regimes later.</p>
         <div class="infobox">
-            <div class="info">USA</div>
-            <div class="info">EU</div>
-        </div>
+            <div class="regime">
+                <div class="text">
+                    <i>USA seeks to maintain its position of the world's hegemony.</i><br>
+                    USA, also known as the UNITED STATES OF AMERICA, is the most advanced and poweful region in the game. It is the only regime that starts a game with 5 finished researches. With proper operations, USA could control the entire 8 regions of NORTH AMERICA just 30 seconds after the game started. Moreover, the initial regions of USA have high research levels. Naturally, USA is the most susceptible regime to suffer from global strike.
+                </div>
+                <div class="info">
+                    <b style="color:white">In-game name:</b> USA<br>
+                </div>
+            </div>
+            <div class="regime">
+                <div class="info">RUSSIA</div>
+            </div>
+            <div class="regime">
+                <div class="info">EU</div>
+            </div>
+            <div class="regime">
+                <div class="info">UK</div>
+            </div>
+            <div class="regime">
+                <div class="info">CHINA</div>
+            </div>
+            <div class="regime">
+                <div class="info">INDIA</div>
+            </div>
+            <div class="regime">
+                <div class="info">PAKISTAN</div>
+            </div>
+            <div class="regime">
+                <div class="info">ISRAEL-IRAQ</div>
+            </div>
+            <div class="regime">
+                <div class="info">KOREA-JAPAN</div>
+            </div>
 	</body>
 </html>
