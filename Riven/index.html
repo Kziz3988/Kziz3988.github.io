@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WarframeMod Riven Analyzer</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div class="app">
+    <div class="header-row">
+        <div class="title" data-i18n="title">星际战甲Mod · 紫卡分析</div>
+        <div class="lang-selector">
+            <label for="langSelect">🌐</label>
+            <select id="langSelect">
+                <option value="zh">中文</option>
+                <option value="en">English</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="config-panel">
+        <div class="config-row">
+            <div class="field">
+                <label for="statType" data-i18n="template">模板</label>
+                <select id="statType">
+                    <option value="2+" data-i18n="opt_2p">2正面</option>
+                    <option value="2+1" selected data-i18n="opt_2p1n">2正面 1负面</option>
+                    <option value="3+" data-i18n="opt_3p">3正面</option>
+                    <option value="3+1" data-i18n="opt_3p1n">3正面 1负面</option>
+                </select>
+            </div>
+
+            <span class="inline-divider">|</span>
+
+            <div class="field field-positive">
+                <label data-i18n="positive">正面</label>
+                <div class="selector-group" id="positiveSelectors">
+                    <span class="fixed-damage" data-i18n="damage">伤害</span>
+                </div>
+            </div>
+
+            <span class="inline-divider">|</span>
+
+            <div class="field field-negative">
+                <label data-i18n="negative">负面</label>
+                <div class="selector-group" id="negativeSelectors">
+                </div>
+            </div>
+        </div>
+
+        <div class="mutex-info" data-i18n="mutex_info">互斥词条：重复攻击/攻击全体 · 抽牌/添加牌 · 负面效果 · 状态牌 · 自身负面效果</div>
+    </div>
+
+    <div id="resultContainer"></div>
+</div>
+
+<script src="data.js"></script>
+<script src="i18n.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
